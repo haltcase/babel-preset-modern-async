@@ -1,0 +1,9 @@
+{
+  "presets": [
+    ["./index.js", {
+      "fast-async": {
+        "runtimePattern": "src\\.js"
+      }
+    }]
+  ]
+}
