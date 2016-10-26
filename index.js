@@ -1,4 +1,4 @@
-var assign = require('merge-options')
+var assign = require('assign-deep')
 var modify = require('modify-babel-preset')
 
 module.exports = function preset (ctx, opt) {
