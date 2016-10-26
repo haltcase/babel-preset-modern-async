@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-modern-async",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-alpha.2",
   "description": "Cutting edge Babel preset using 'fast-async' instead of generators for async/await. Also configurable for Electron.",
   "main": "index.js",
   "scripts": {
