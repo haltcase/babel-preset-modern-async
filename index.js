@@ -40,7 +40,7 @@ module.exports = function preset (ctx, opt) {
     'transform-es2015-typeof-symbol': false
   }
 
-  if (!obj.electron) assign(es2015transforms, electron2015)
+  if (obj.electron) assign(es2015transforms, electron2015)
 
   var es2015 = modify('es2015', es2015transforms).plugins
   var es2016 = modify('es2016').plugins
