@@ -6,6 +6,7 @@ module.exports = function preset (ctx, opt) {
     'fast-async': {
       runtimePattern: 'directive'
     },
+    esModules: false,
     electron: false,
     promise: 'bluebird',
     stage: 0
@@ -40,7 +41,12 @@ module.exports = function preset (ctx, opt) {
     'transform-es2015-typeof-symbol': false
   }
 
+  var esModules = {
+    'transform-es2015-modules-commonjs': false
+  }
+
   if (obj.electron) assign(es2015transforms, electron2015)
+  if (obj.esModules) assign(es2015transforms, esModules)
 
   var es2015 = modify('es2015', es2015transforms).plugins
   var es2016 = modify('es2016').plugins
