@@ -80,7 +80,7 @@ module.exports = function preset (ctx, opt) {
   var plugins = [].concat([
     [require('fast-async'), obj['fast-async']],
     obj.promise === 'bluebird' && require('babel-plugin-transform-promise-to-bluebird').default
-  ], es2015, es2016, es2017, stage).filter(Boolean)
+  ], stage, es2017, es2016, es2015).filter(Boolean)
 
   return {
     plugins: plugins
