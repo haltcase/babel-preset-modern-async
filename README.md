@@ -5,6 +5,10 @@ using [`fast-async`](https://github.com/MatAtBread/fast-async) for `async`/`awai
 generators. Also includes configuration options for using Bluebird as the
 Promise library, targeting Electron, and setting a stage ( ie. `stage-0` )
 
+**no longer actively maintainted**
+
+Feel free to fork, or let me know if you'd like to take over the project.
+
 ## Install
 
 `npm i babel-preset-modern-async`
